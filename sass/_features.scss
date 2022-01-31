@@ -1,0 +1,25 @@
+.features{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    .container{
+        padding: 20rem 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        grid-template-rows: 1fr;
+        display: grid;
+        grid-gap: 10rem;
+
+        @media (max-width: $bp-small) {
+            width: 60%;
+            grid-template-columns: 1fr;
+        }
+        @media (max-width: $bp-large) {
+            width: 80%;
+            grid-gap: 5rem;
+        }
+    }
+}
